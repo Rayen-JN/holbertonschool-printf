@@ -1,6 +1,6 @@
 # holbertonschool-printf
 
-# Made by `rayen`
+# Made by `Rayen`
 
 # The `printf` Function
 
