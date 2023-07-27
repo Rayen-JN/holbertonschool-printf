@@ -20,4 +20,5 @@ int _putchar(char c);
 int print_character(va_list valley);
 int print_string(va_list valley);
 int print_percent(va_list valley);
+int print_integer(va_list valley);
 #endif
