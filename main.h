@@ -4,11 +4,11 @@
 #include <stdarg.h>
 #include<stddef.h>
 
-	/**
-	 * struct pro - struct of format and function
-	 * @f: a function pointer
-	 * @X: specifier.
-	 */
+/**
+ * struct pro - struct of format  and  function
+ * @f: a function pointer
+ * @X: specifier.
+*/
 	typedef struct pro
 {
 	char *X;
