@@ -13,8 +13,6 @@ int (*get_function(const char *C))(va_list)
 	pro_t types[] = {
 		{"s", print_string},
 		{"c", print_character},
-		{"d", print_integer},
-		{"i", print_integer},
 		{"%", print_percent},
 		{NULL, NULL},
 	};
