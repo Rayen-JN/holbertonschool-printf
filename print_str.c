@@ -2,13 +2,13 @@
 
 /**
  * print_string - Prints str
- * @args: Va_list 
+ * @args: Va_list
  * Return: number
  */
 
 int print_string(va_list args)
 {
-	char *str = va_arg(args,char *);
+	char *str = va_arg(args, char *);
 	int count = 0;
 
 	while (*str)
