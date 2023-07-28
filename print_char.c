@@ -9,9 +9,11 @@
 int print_character(va_list args)
 {
 	char c = va_arg(args, int);
-	int count = 0;
+	int count = 0, stor;
 
-	_putchar(c);
+	stor = _putchar(c);
+	if (stor == -1)
+		return (-1);
 	count++;
 	return (count);
 }
