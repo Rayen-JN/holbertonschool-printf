@@ -1,0 +1,55 @@
+.TH _PRINTF 3 "July 2023" "_printf Manual"
+
+.SH NAME
+_printf \- custom formatted output conversion
+
+.SH SYNOPSIS
+.B #include "main.h" .B #include <stdio.h> .B #include <stdarg.h> .B #include <stdlib.h>
+.br
+.I int _printf(const char *format, ...);
+
+.SH DESCRIPTION
+.B _printf \- _printf is a custom implementation of the
+C programming function printf.
+Similar to the printf (3) \- Prints formatted data to stdout
+Printf function is often used to our program to do formatted output.
+All variants of printf function use the same formatting techniques.
+There is a string that specifies the layouts of output is call format
+specifier.
+.PP
+\&.TP .BR c : character
+.PP
+\&.TP .BR s : STRING
+.PP
+\&.TP .BR i : decimal integer
+.PP
+\&.TP .BR d : decimal integer
+.PP
+\&.TP .BR % : A % followed by another
+
+.SH RETURN VALUE
+The \_printf\ function returns the number of characters written to the standard output. 
+If an error occurs, a negative value is returned.
+
+.SH EXAMPLES
+Print a simple message:
+.PP
+.nf
+.B _printf("Hello, world!\n");
+.fi
+.PP
+Print an integer:
+.PP
+.nf
+.B _printf("The value of x is %d\n", x);
+.fi
+
+.SH SEE ALSO
+sprintf(3), fprintf(3), vprintf(3)
+
+.SH AUTHOR
+The \_printf\ function was created by 
+[rayen jouini]
+
+.SH BUGS
+There are no known bugs in the \fB_printf\fP function.
