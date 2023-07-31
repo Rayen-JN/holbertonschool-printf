@@ -14,9 +14,9 @@ int (*get_function(const char *C))(va_list)
 		{"s", print_string},
 		{"c", print_character},
 		{"%", print_percent},
-		{"d",print_integer},
-		{"i",print_integer},
-		{NULL, NULL},
+		{"d", print_integer},
+		{"i", print_integer},
+		{NULL, NULL}
 	};
 	for (i = 0; types[i].X; i++)
 	{
